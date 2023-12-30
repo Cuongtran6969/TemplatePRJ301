@@ -1,0 +1,439 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartegories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-1">
+                    <div class="header-logo">
+                        <a href="#"><img src="./images/headerLogo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Men</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Women</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Kids</a>
+                                    </li>
+                                    <li class="nav-item has-child">
+                                        <a class="nav-link" href="#">
+                                         Home & living
+                                        </a>
+                                        <ul class="submenu">
+                                            <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                            <li class="nav-item has-child"><a class="nav-link" href="">Kids</a>
+                                                <ul class="submenu">
+                                                    <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Beauty</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Studio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-box">
+                        <div class="search-icon">
+                            <i class='bx bx-search'></i>
+                        </div>
+                        <div class="search-input">
+                            <input type="text" placeholder="Search for products, brands and more" aria-label="Example text with button addon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="user-status">
+                                <div class="user-logo">
+                                    <i class='bx bx-user'></i>
+                                </div>
+                                <span class="user-title">Profile</span>
+                                <div class="user-box_access">
+                                    <div class="user-box-header">
+                                        <!-- access -->
+                                        <div class="user-access">
+                                            <a href="/profile.html" class="d-block">
+                                                <img src="./images/user.jpg" alt="">
+                                            </a>
+                                            <div class="user-access-info">
+                                                <span>Eden Smith</span>
+                                                <p>Los Angeles, CA</p>
+                                            </div>
+                                            <a href="#" class="logout-link">
+                                                <div class="logout-button">
+                                                    Logout
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- not access -->
+                                        <!-- <div class="user-not-access">
+                                            <span class="not-access-title">Wellcome</span>
+                                            <p>To access account and manage orders</p>
+                                            <a href="#" class="login-link">
+                                                <div class="login-button">
+                                                    Login / Signup
+                                                </div>
+                                            </a>
+                                        </div> -->
+
+                                    </div>
+                                    <hr>
+                                    <ul class="user-access-link">
+                                        <li><a href="#">Orders</a></li>
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li class="access-new">
+                                            <a href="#">Myntra Insider</a>
+                                            <div class="special">New</div>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="page-access-link">
+                                        <li><a href="#">Myntra Credit</a></li>
+                                        <li><a href="#">Coupons</a></li>
+                                        <li><a href="#">Saved Cards</a></li>
+                                        <li><a href="#">Saved VPA</a></li>
+                                        <li><a href="#">Saved Addresses</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="message-status">
+                                <div class="bell-logo">
+                                    <i class='bx bx-bell'></i>
+                                </div>
+                                <span class="love-title">Notification
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="cart-status">
+                                <div class="cart-logo">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </div>
+                                <span class="cart-title">Bag</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w-60 m-auto">
+            <h1 class="my-4">Account</h1>
+            <div class="mt-5">
+                <ul class="d-flex py-4 border-top border-bottom text-center px-3">
+                    <li class="me-5">
+                        <a href="" class="fs-3 text-dark">Account info</a>
+                    </li>
+                    <li class="me-5">
+                        <a href="" class="fs-3 text-dark">Save lists</a>
+                    </li>
+                    <li class="me-5">
+                        <a href="" class="fs-3 text-dark">My order</a>
+                    </li>
+                    <li class="me-5">
+                        <a href="" class="fs-3 text-dark">Change password</a>
+                    </li>
+                    <li class="">
+                        <a href="" class="fs-3 text-dark">Change Billing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="">
+                <!-- noi dung -->
+                <!-- <div class="h-100vh mt-5">
+                    <h1 class="fw-bold">Account infomation</h1>
+                    <div class="row py-5">
+                        <div class="col-md-3 h-100">
+                            <div class="account-img position-relative">
+                                <img src="./images/user.jpg" alt="" class="">
+                                <div class="change-userImg ">
+                                    <i class='bx bx-image-add fs-3'></i>
+                                    <span>Change image</span>
+                                </div>
+                                <input type="file" class="input-userImg">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="user-info">
+                                <div class="mt-5">
+                                    <h3 class="fw-medium">Full name</h3>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control px-4 py-3 fs-3 rounded-xl" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3>Email</h3>
+                                    <div class="input-group mb-3 rounded-xl">
+                                        <span class="input-group-text p-4" id="basic-addon1">
+                                            <i class="fa-regular fa-envelope fs-3"></i>
+                                        </span>
+                                        <input type="text" value="cuongtran2003dt@gmail.com" class="form-control px-4 py-3 fs-3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3>Date of birth</h3>
+                                    <div class="input-group mb-3 rounded-xl">
+                                        <span class="input-group-text p-4" id="basic-addon1">
+                                            <i class="fa-solid fa-calendar-days fs-3"></i>
+                                        </span>
+                                        <input type="date" class="form-control px-4 py-3 fs-3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3>Addess</h3>
+                                    <div class="input-group mb-3 rounded-xl">
+                                        <span class="input-group-text p-4" id="basic-addon1">
+                                            <i class="fa-solid fa-location-dot fs-3"></i>
+                                        </span>
+                                        <input type="text" value="New york, USA" class="form-control px-4 py-3 fs-3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3>Gender</h3>
+                                    <div class="input-group mb-3">
+                                        <select class="form-select px-4 py-3 fs-3" aria-label="Default select example">
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3>Phone</h3>
+                                    <div class="input-group mb-3 rounded-xl">
+                                        <span class="input-group-text p-4" id="basic-addon1">
+                                            <i class="fa-solid fa-phone fs-3"></i>
+                                        </span>
+                                        <input type="text" value="0383459560" class="form-control px-4 py-3 fs-3" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3>About you</h3>
+                                    <div class="input-group mb-3">
+                                        <textarea name="" id="" cols="30" rows="10" class="w-100"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="h-100vh mt-5">
+                    <h1 class="fw-bold">Update your password</h1>
+                    <div class="row py-5">
+                        <div class="col-md-12">
+                            <div class="change-password">
+                                <div class="mt-5">
+                                    <h3 class="fw-medium">Current password</h3>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="password" class="form-control px-4 py-3 fs-3 rounded-xl" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="fw-medium">New password</h3>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="password" class="form-control px-4 py-3 fs-3 rounded-xl" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="fw-medium">Confirm password</h3>
+                                    <div class="input-group flex-nowrap">
+                                        <input type="password" class="form-control px-4 py-3 fs-3 rounded-xl" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <button class="border-0 px-5 py-4 fs-4 bg-dark text-white rounded-xl fw-bold">Update password</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="">
+                    <div class="pe-5">
+                        <div class="header-order row">
+                          <div class="col-md-2 fs-4"></div>
+                          <div class="col-md-2 fs-4"></div>
+                          <div class="col-md-2 fs-4">Price</div>
+                          <div class="col-md-2 fs-4">Number</div>
+                          <div class="col-md-2 fs-4">Subtotal</div>
+                          <div class="col-md-2 fs-4">Status</div>
+                        </div>
+                        <div class="row order-item py-5">
+                            <div class="col-2">
+                                <a href="" class="d-block h-100">
+                                    <img src="./images/f1.jpg" alt="" class="rounded-lg object-fit-cover">
+                                </a>
+                            </div>
+                            <div class="col-9 d-flex flex-fill flex-column justify-content-between ">
+                                <div class="h-50 d-flex align-items-center justify-content-between flex-fill">
+                                    <div class="row">
+
+                                    <div class="col-md-4">
+                                        <h3 class="fw-bold">Rey Nylon Backpack</h3>
+                                        <div class="d-flex align-items-center position-relative hover-change">
+                                            <div class="">
+                                                <i class="fa-solid fa-fill-drip me-3"></i>
+                                                <span class="text-black">T-Shirt</span>
+                                            </div>
+                                            <div class="border-line border-l mx-3"></div>
+                                            <div class="">
+                                                <i class="fa-solid fa-store me-3"></i>
+                                                <span class="text-black">Amand</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <span class="fs-4">đ265.000</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center col-md-2">
+                                        <div class="box-input">
+                                            <input type="text" value="1" class="input-number" id="numberValue" />
+                                        </div>
+                                    </div>
+
+                                    <div class="fs-4 col-md-2">
+                                        <span class="text-danger">đ265.000</span>
+                                    </div>
+
+                                    <div class="fs-4 col-md-2">
+                                        <span class="text-danger">Wait</span>
+                                    </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="h-50 d-flex align-items-center justify-content-between">
+                                    <span class="text-white p-2 mx-2 fs-5 fw-bold bg-danger tag-sale">Giảm 30%</span>
+                                    <div class="">
+                                        <a href="" class="text-decoration-none fs-4 fw-bold text-danger">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="footer" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 position-relative">
+                    <h4 class="fw-bold mb-4">Contact</h4>
+                    <p class="fs-4"><strong>Address:</strong> 562 Wellington Road Street 32, San Fransica</p>
+                    <p class="fs-4"><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6329</p>
+                    <p class="fs-4"><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                    <div class="follow">
+                        <h4>Follow Us</h4>
+                        <div class="icons mt-5">
+                            <i class="bx bxl-facebook me-2 fs-3"></i>
+                            <i class="bx bxl-twitter me-2 fs-3"></i>
+                            <i class="bx bxl-instagram me-2 fs-3"></i>
+                            <i class="bx bxl-pinterest-alt me-2 fs-3"></i>
+                            <i class="bx bxl-youtube me-2 fs-3"></i>
+                        </div>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="./images/headerLogo.png" class="" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="fw-bold mb-4">About</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Delivery Inforation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="fw-bold mb-4">My Account</h4>
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="fw-bold mb-4">Install App</h2>
+                    <p class="my-4 desc-app">From App Store or Google Play</p>
+                    <div class="d-flex">
+                        <div class="row">
+                            <div class="col">
+                                <a href="" class="footer-app">
+                                    <img src="./images/appStore.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="" class="footer-app">
+                                    <img src="./images/googlePlay.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="my-4 desc-app">Secured Payment Gaeways</p>
+                    <div>
+                        <a href="" class="d-block">
+                            <img src="./images/pay.png" alt="" class="h-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="copyright text-center">
+                        <hr>
+                        <p class="copyright">@ 2021, Tech2 etc - HTML CSS Ecoomerce Template</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

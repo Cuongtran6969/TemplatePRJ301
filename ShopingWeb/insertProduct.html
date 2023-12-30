@@ -1,0 +1,367 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+function updateImagePreview(input) {
+    var filePath = input.value;
+    var fileName = filePath.split('\\').pop(); 
+    
+    var imagePreview = document.getElementById('boxImage');
+    imagePreview.src = "./images/"+fileName;
+    console.log(fileName);
+}
+</script>
+
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-1">
+                    <div class="header-logo">
+                        <a href="#"><img src="./images/headerLogo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Men</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Women</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Kids</a>
+                                    </li>
+                                    <li class="nav-item has-child">
+                                        <a class="nav-link" href="#">
+                                         Home & living
+                                        </a>
+                                        <ul class="submenu">
+                                            <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                            <li class="nav-item has-child"><a class="nav-link" href="">Kids</a>
+                                                <ul class="submenu">
+                                                    <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kids</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Beauty</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Studio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-box">
+                        <div class="search-icon">
+                            <i class='bx bx-search'></i>
+                        </div>
+                        <div class="search-input">
+                            <input type="text" placeholder="Search for products, brands and more" aria-label="Example text with button addon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="user-status">
+                                <div class="user-logo">
+                                    <i class='bx bx-user'></i>
+                                </div>
+                                <span class="user-title">Profile</span>
+                                <div class="user-box_access">
+                                    <div class="user-box-header">
+                                        <!-- access -->
+                                        <div class="user-access">
+                                            <a href="/profile.html" class="d-block">
+                                                <img src="./images/user.jpg" alt="">
+                                            </a>
+                                            <div class="user-access-info">
+                                                <span>Eden Smith</span>
+                                                <p>Los Angeles, CA</p>
+                                            </div>
+                                            <a href="#" class="logout-link">
+                                                <div class="logout-button">
+                                                    Logout
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- not access -->
+                                        <!-- <div class="user-not-access">
+                                            <span class="not-access-title">Wellcome</span>
+                                            <p>To access account and manage orders</p>
+                                            <a href="#" class="login-link">
+                                                <div class="login-button">
+                                                    Login / Signup
+                                                </div>
+                                            </a>
+                                        </div> -->
+
+                                    </div>
+                                    <hr>
+                                    <ul class="user-access-link">
+                                        <li><a href="#">Orders</a></li>
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li class="access-new">
+                                            <a href="#">Myntra Insider</a>
+                                            <div class="special">New</div>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <ul class="page-access-link">
+                                        <li><a href="#">Myntra Credit</a></li>
+                                        <li><a href="#">Coupons</a></li>
+                                        <li><a href="#">Saved Cards</a></li>
+                                        <li><a href="#">Saved VPA</a></li>
+                                        <li><a href="#">Saved Addresses</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="message-status">
+                                <div class="bell-logo">
+                                    <i class='bx bx-bell'></i>
+                                </div>
+                                <span class="love-title">Notification
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="cart-status">
+                                <div class="cart-logo">
+                                    <i class='bx bx-shopping-bag'></i>
+                                </div>
+                                <span class="cart-title">Bag</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-weak">
+        <div class="container bg-white">
+            <div class="row px-5">
+                <div class="col-md-5 mt-5">
+                    <h2 class="my-5 fw-bold">Hình ảnh sản phẩm</h2>
+                    <div class="">
+                        <div class="border-dotted p-5 d-flex flex-column box-input-image w-90 position-relative justify-content-center">
+                            <i class='bx bx-image-add fs-1 text-danger'></i>
+                            <span class="text-danger fs-3">Thêm hình ảnh(1)</span>
+                             <input type="file" 
+                             onchange="updateImagePreview(this)"
+                                  class="form-control w-100 h-100 position-absolute top-0 start-0" style="z-index: 100; opacity: 0;" name="photo" placeholder="Enter photo">
+                            <img src="" alt=""class="position-absolute start-0" id="boxImage"/>
+                            <!-- <input onchange="chooseFile(this)" type="file" accept="image/gif, image/jpeg, image/png" class="w-100 bg-danger h-100 position-absolute top-0 end-0 opacity-0"> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 mt-5">
+                    <div >
+                        <h2 class="my-5">Thông tin chi tiết sản phẩm</h2>
+                        <div class="text-center">
+                            <div class="row d-flex align-items-center">
+                              <div class="col-md-2 text-end">
+                                <label class="fs-4" for="product-name">Tên sản phẩm</label>
+                              </div>
+                              <div class="col-md-10 insert-product-input">
+                                <input type="text" id="product-name" class="rounded-sm border w-100 fs-3 py-4 px-3" placeholder="Product name"/>  
+                              </div>
+                            </div>
+                            <div class="row mt-5 d-flex align-items-center">
+                                <div class="col-md-2 text-end">
+                                  <label class="fs-4" for="product-type">Loại sản phẩm</label>
+                                </div>
+                                <div class="col-md-10 insert-product-input">
+                                  <input type="text" id="product-type" class="rounded-sm border w-100 fs-3 py-4 px-3" placeholder="Product type"/>  
+                                </div>
+                            </div>
+                            <div class=" d-flex align-items-center">
+                               <div class="col-md-2 text-end px-3">
+                                 <label class="fs-4" for="product-type">Loại sản phẩm</label>
+                               </div>
+                               <div class="w-100">
+                                <select class="form-select py-3 fs-3" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                               </div>
+                            </div>
+                            <div class="row mt-5 d-flex align-items-center">
+                                <div class="col-md-2 text-end">
+                                  <label class="fs-4" for="product-brand">Brand</label>
+                                </div>
+                                <div class="col-md-10 insert-product-input">
+                                  <input type="text" id="product-brand" class="rounded-sm border w-100 fs-3 py-4 px-3" placeholder="product-brand"/>  
+                                </div>
+                            </div>
+                            <div class="row mt-5 d-flex align-items-center">
+                                <div class="col-md-2 text-end">
+                                  <label class="fs-4" for="product-quantity">Quantity</label>
+                                </div>
+                                <div class="col-md-10 insert-product-input">
+                                  <input type="number" min="0" id="product-quantity" class="rounded-sm border w-100 fs-3 py-4 px-3" placeholder="product-quantity"/>  
+                                </div>
+                            </div>
+                            <div class="row mt-5 d-flex align-items-center">
+                                <div class="col-md-2 text-end">
+                                    <h3 class="fs-4">Size sản phẩm</h3>
+                                  </div>
+                                <div class="col-md-10 d-flex ">
+                                    <div class="d-flex align-items-center me-5">
+                                        <input type="checkbox" name="" id="" class="me-3">
+                                        <label for="">S</label>
+                                    </div>
+                                    <div class="d-flex align-items-center me-5">
+                                        <input type="checkbox" name="" id="" class="me-3">
+                                        <label for="">M</label>
+                                    </div>
+                                    <div class="d-flex align-items-center me-5">
+                                        <input type="checkbox" name="" id="" class="me-3">
+                                        <label for="">L</label>
+                                    </div>
+                                    <div class="d-flex align-items-center me-5">
+                                        <input type="checkbox" name="" id="" class="me-3">
+                                        <label for="">XL</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5 d-flex align-items-center" >
+                                      <div class="col-md-2 text-end">
+                                        <h3 class="fs-4">Màu sản phẩm</h3>
+                                      </div>
+                                      <div class="col-md-10" id="boxColor">
+                                          <div class="insert-product-input">
+                                            <input type="text" class="rounded-sm border
+                                             w-50 fs-3 py-4 px-3"
+                                             name="color" 
+                                             placeholder="Color"/>  
+                                          </div>
+                                      </div>
+                                      <div class="text-center">
+                                        <button onclick="addMoreColor()" class="w-25 border-0 bg-success text-white rounded-sm py-3 fs-3 mt-5">add more</button>
+                                      </div>
+                            </div>
+                            <div class="row mt-5 d-flex align-items-center">
+                                <div class="col-md-2 text-end">
+                                    <h3 class="fs-4">Sale</h3>
+                                  </div>
+                                  <div class="col-md-10 insert-product-input">
+                                    <input type="number" class="rounded-sm border w-25 fs-3 py-4 px-3" placeholder="Percent"/>  
+                                    <span class="px-4 fs-3">%</span> 
+                                </div>
+                            </div>
+                            <div class="row mt-5 d-flex align-items-center">
+                                <div class="col-md-2 text-end">
+                                  <label class="fs-4">Mô tả sản phẩm</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="form-floating">
+                                        <textarea class="form-control fs-3 px-3" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <a href="/cartegories.html" class="d-block m-auto w-fit-content px-4 py-4 border-0 rounded-sm min-w20 text-center bg-success text-white shadow-lg" id="minusNumberBtn">
+                    <span class="fs-3 fw-semibold">Insert</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script>
+     function addMoreColor() {
+      const boxColor =  document.getElementById('boxColor')
+      const formColor = `<div class="insert-product-input mt-3">
+                                            <input type="text" class="rounded-sm border w-50 fs-3 py-4 px-3" placeholder="Color"/>  
+                         </div>`
+      boxColor.innerHTML+= formColor
+     }
+    </script>
+
+</body>
+
+</html>
+<!-- <div class="row mt-5 d-flex align-items-center" >
+    <div class="col-md-2 text-end">
+      <h3 class="fs-4">Màu sản phẩm</h3>
+    </div>
+    <div class="col-md-10" id="boxColor">
+        <div class="insert-product-input d-flex align-items-center">
+          <input type="text" class="rounded-sm border
+           w-50 fs-3 py-4 px-3"
+           name="color" 
+           placeholder="Color"
+           />  
+          <div class="text-danger fs-3 px-5 pointer" onClick="removeThisColor()">
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+    </div>
+    <div class="text-center">
+      <button type="button" onclick="addMoreColor()" 
+              class="w-25 border-0 bg-success text-white
+              rounded-sm py-3 fs-3 mt-5">
+          add more color
+      </button>
+    </div>
+</div>
+<div class="row mt-5 d-flex align-items-center" >
+    <div class="col-md-2 text-end">
+      <h3 class="fs-4">Size sản phẩm</h3>
+    </div>
+    <div class="col-md-10" id="boxSize">
+        <div class="insert-product-input d-flex align-items-center sizeItem">
+          <input type="text" class="rounded-sm border
+           w-50 fs-3 py-4 px-3"
+           name="size" 
+           placeholder="Size"/>  
+          <div class="text-danger fs-3 px-5 pointer" onClick="removeThisSize()">
+              <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+    </div>
+    <div class="text-center">
+      <button type="button" onclick="addMoreSize()" 
+              class="w-25 border-0 bg-success text-white
+              rounded-sm py-3 fs-3 mt-5">
+          add more size
+      </button>
+    </div>
+</div> -->
