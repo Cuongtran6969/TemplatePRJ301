@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="../img/shopping_Logo.png" class="logo" alt=""></a>     
+        <div>
+            <ul id="navbar">
+                <li class="links-item"><a href="index.html">Home</a></li>
+                <li class="links-item"><a class="active" href="shop.html">Shop</a></li>
+                <li class="links-item"><a href="blog.html">Blog</a></li>
+                <li class="links-item"><a href="about.html">About</a></li>
+                <li class="links-item"><a href="conatct.html">Contact</a></li>
+                <li id="cart-icon"><a href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+                <a href="#" id="close"><i class='bx bx-x' ></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+            <i class='bx bx-menu menu-icon'></i>
+        </div>
+    
+    </section>
+    
+    <section id="page-header">
+         <h2>Super value deals</h2>
+         <p>Save more with coupons & up to 70% off</p>
+    </section>
+     
+<!-- <input type="file" id="file" accept="image/jpeg, image/png, image/jpg">
+<img id="image-display"> -->
+
+
+    <section id="newProduct">
+        <div class="pro" >
+                <div class="image-box">
+                    <input type="file" id="image-upload">
+                </div>
+                <span>Brand:<input type="text" id="brand-input" placeholder="ex: addidas"></input></span>
+                <span>Name :<input type="text" id="name-input" placeholder="ex: Hoodie black friday sale"></input></span>
+                <span>number of star<input type="text" id="number-star-input" placeholder="ex: number star.."></span>
+                <span>Price:<input type="text" id="price-input" placeholder="ex: $27"></input></span>
+                <span>Des:<textarea type="text" id="des-input" placeholder="describe detail about product..."></textarea></span>
+        </div>
+        <button id="save-btn">Add</button>
+        <button id="update-btn">Update</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+            <!-- //cuong -->
+            
+        </div>
+    </section>
+    
+    <section id="pagination">
+
+    </section>
+
+
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>sign up for newsletter</h4>
+            <p>Get E-mail update about our latest shop and <span>spacial offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address...">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../img/shopping_Logo.png" class="logo" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road Street 32, San Fransica</p>
+            <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6329</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-pinterest-alt'></i>
+                    <i class='bx bxl-youtube' ></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Delivery Inforation</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="call install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt="">
+                <img src="../img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gaeways</p>
+            <img src="../img/pay/pay.png" class="list-pay" alt="">
+        </div>
+        <div class="copyright">
+            <p>@ 2021, Tech2 etc - HTML CSS Ecoomerce Template</p>
+        </div>
+    </footer>
+    <div id="modal"></div>
+</body>
+<!-- <script src="./app.js"></script> -->
+<script src="./product.js"></script>
+</html>

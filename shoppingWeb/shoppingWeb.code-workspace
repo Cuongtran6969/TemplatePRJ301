@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../shopping_sever"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "shoppingWeb"
+	}
+}
